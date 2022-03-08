@@ -5,9 +5,11 @@ import json
 count = 0
 URL = "https://www.ikea.com/us/en/cat/chairs-fu002/?" 
 
-page = requests.get(URL)
-page_soup = BeautifulSoup(page.content, "html.parser")
-
+def getdata(URL):
+	page = requests.get(URL)
+	page_soup = BeautifulSoup(page.content, "html.parser")
+	return page_soup
+page_soup = getdata(URL)
 
 #huge grid with all chairs
 page_grid = page_soup.findAll("div", {"class": "plp-product-list__products"})
