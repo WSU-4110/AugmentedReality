@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
+//added to new branch!
 public class InputManager : MonoBehaviour
 {
     [SerializeField] private GameObject arObj;  //need game object as our "visual object"
