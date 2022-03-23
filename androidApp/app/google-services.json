@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "989289577297",
+    "firebase_url": "https://auth-f1ae9-default-rtdb.firebaseio.com",
+    "project_id": "auth-f1ae9",
+    "storage_bucket": "auth-f1ae9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989289577297:android:d12741bfcf55d6a28bb170",
+        "android_client_info": {
+          "package_name": "com.example.augmented_reality_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989289577297-2fak441rme0b8j1h6p721i544n6ch3mv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg3stnqpFh4n_zATctzjfQXMVLC74rXYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989289577297-2fak441rme0b8j1h6p721i544n6ch3mv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
