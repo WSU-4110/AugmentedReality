@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Augmented_Reality_app.iml" filepath="$PROJECT_DIR$/.idea/modules/Augmented_Reality_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Augmented_Reality_app.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Augmented_Reality_app.app.iml" />
+    </modules>
+  </component>
+</project>
