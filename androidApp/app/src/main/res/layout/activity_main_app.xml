@@ -4,6 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#808080"
     tools:context=".main_app">
+
+    <Button
+        android:id="@+id/priceBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="68dp"
+        android:text="$36.99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toEndOf="@+id/redOfficeChair"
+        app:layout_constraintTop_toBottomOf="@+id/redAndSilverOfficeChair"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/redAndSilverOfficeChair"
+        android:layout_width="142dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Red Office Chair"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceBtn" />
+
+    <ImageView
+        android:id="@+id/officeChair"
+        android:layout_width="239dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="black office chair with wheels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/office_chair" />
+
+    <ImageView
+        android:id="@+id/redOfficeChair"
+        android:layout_width="239dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="red office chair with wheels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officeChair"
+        app:srcCompat="@drawable/red_office_chair" />
+
+    <TextView
+        android:id="@+id/blackAndSilverOfficeChair"
+        android:layout_width="142dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Black and Silver Office Chair"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/priceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:text="$36.99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toEndOf="@+id/officeChair"
+        app:layout_constraintTop_toBottomOf="@+id/blackAndSilverOfficeChair" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
