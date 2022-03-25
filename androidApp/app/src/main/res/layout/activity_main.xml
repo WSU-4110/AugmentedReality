@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-black"
-        android:text="AR App"
+        android:text="AR Furniture"
         android:textAlignment="center"
         android:textSize="60sp"
         android:textStyle="bold"
