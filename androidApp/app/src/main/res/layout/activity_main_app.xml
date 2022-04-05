@@ -4,87 +4,191 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#808080"
+
     tools:context=".main_app">
 
     <Button
-        android:id="@+id/priceBtn2"
+        android:id="@+id/armlessChairBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="68dp"
-        android:text="$36.99"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="goToArmless"
+        android:text="$59.99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/armlessChairImg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/armlessChairImg"
+        android:layout_width="163dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="104dp"
+        android:contentDescription="black office chair with wheels"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/foldableChairImg"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazonChairBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/armless_chair" />
+
+    <Button
+        android:id="@+id/arozziPriceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:onClick="goToArozzi"
+        android:text="$279.99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arozziChairImg" />
+
+    <Button
+        android:id="@+id/foldableChairBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:clickable="true"
+        android:onClick="goToFoldable"
+        android:text="$89.99"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
-        app:layout_constraintStart_toEndOf="@+id/redOfficeChair"
-        app:layout_constraintTop_toBottomOf="@+id/redAndSilverOfficeChair"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/armlessChairBtn"
+        app:layout_constraintTop_toBottomOf="@+id/foldableChairImg"
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
-        android:id="@+id/redAndSilverOfficeChair"
-        android:layout_width="142dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="120dp"
+        android:id="@+id/foldableChair"
+        android:layout_width="131dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="197dp"
         android:gravity="center"
-        android:text="Red Office Chair"
+        android:text="Virco 162 - 162 Series Folding Chair With Plastic Caps"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/foldableChairImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arozziPriceBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/arozziChair"
+        android:layout_width="131dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Arozzi Verona-JR-Black Computer Gaming/Office Chair "
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/priceBtn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/officeChair"
-        android:layout_width="239dp"
-        android:layout_height="236dp"
-        android:layout_marginTop="48dp"
+        android:id="@+id/amazonChairImg"
+        android:layout_width="163dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="black office chair with wheels"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arozziChairImg"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazonChair"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/basic_chair" />
+
+    <ImageView
+        android:id="@+id/arozziChairImg"
+        android:layout_width="163dp"
+        android:layout_height="187dp"
+        android:contentDescription="red office chair with wheels"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/office_chair" />
+        app:layout_constraintVertical_bias="0.176"
+        app:srcCompat="@drawable/arozzi_chair" />
 
     <ImageView
-        android:id="@+id/redOfficeChair"
-        android:layout_width="239dp"
-        android:layout_height="236dp"
-        android:layout_marginTop="68dp"
+        android:id="@+id/foldableChairImg"
+        android:layout_width="163dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="104dp"
         android:contentDescription="red office chair with wheels"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/officeChair"
-        app:srcCompat="@drawable/red_office_chair" />
+        app:layout_constraintTop_toBottomOf="@+id/arozziPriceBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/foldable_chair" />
 
     <TextView
-        android:id="@+id/blackAndSilverOfficeChair"
-        android:layout_width="142dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="76dp"
+        android:id="@+id/amazonChair"
+        android:layout_width="171dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Black and Silver Office Chair"
+        android:text="Amazon Basics High-Back Bonded Leather Executive Computer Desk Chair"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintEnd_toStartOf="@+id/arozziChair"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/armlessChair"
+        android:layout_width="190dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="199dp"
+        android:gravity="center"
+        android:text="Bowthy Armless Office Chair Ergonomic Computer Task Desk Chair Without Arms"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/armlessChairImg"
+        app:layout_constraintEnd_toStartOf="@+id/foldableChair"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazonChairBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
-        android:id="@+id/priceBtn"
+        android:id="@+id/amazonChairBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="68dp"
-        android:text="$36.99"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
-        app:layout_constraintStart_toEndOf="@+id/officeChair"
-        app:layout_constraintTop_toBottomOf="@+id/blackAndSilverOfficeChair" />
-
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="goToSo"
+        android:text="$143.49"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arozziPriceBtn"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazonChairImg"
+        app:layout_constraintVertical_bias="0.002" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
