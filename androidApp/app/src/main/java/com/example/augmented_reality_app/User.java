@@ -14,4 +14,16 @@ public class User {
         this.email = email;
     }
 
+    public int addition(int userNum, int userNum2) { return userNum + userNum2; }
+
+    public int subtraction(int userNum, int userNum2){ return userNum - userNum2; }
+
+    public int division(int userNum, int userNum2) { return userNum / userNum2; }
+
+    public int multiplication(int userNum, int userNum2) { return userNum * userNum2; }
+
+    public int powerOfTwo(int userNum) { return userNum * userNum; }
+
+    public double squareRoot(int userNum) { return Math.sqrt(userNum); }
+
 }
