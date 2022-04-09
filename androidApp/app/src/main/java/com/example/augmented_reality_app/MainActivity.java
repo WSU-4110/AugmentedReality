@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    private TextView register;
+    private TextView register, forgotpassword;
     private EditText editTextEmail , editTextPassword;
     private Button singIn;
 
@@ -46,18 +46,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         prograssBar = (ProgressBar) findViewById(R.id.progressBar);
         mAuth = FirebaseAuth.getInstance();
+
+        forgotpassword = (TextView) findViewById(R.id.forgotpassword);
+        forgotpassword.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.forgotpassword:
+                startActivity(new Intent(this, ForgotPassword.class));
             case R.id.register:
                 startActivity(new Intent(this ,registeruser.class ));
                 break;
             case R.id.signIn:
                 userLogin();
                 break;
+
+
         }
     }
 
