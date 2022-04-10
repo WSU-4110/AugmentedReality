@@ -1,8 +1,12 @@
 package com.example.augmented_reality_app;
 
+import org.junit.Assert;
 import org.junit.Test;
 
+
 import static org.junit.Assert.*;
+
+
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -10,8 +14,18 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+  //  @Test
+    //public void addition_isCorrect() {
+   //     Assert.assertEquals(4, 2 + 2);
+   // }
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+   public void passwordlengthcheck() {
+        info_checker obj = new info_checker();
+
+
+        Assert.assertEquals(false,obj.passwordlengthcheck("Password"));
     }
+
+
 }

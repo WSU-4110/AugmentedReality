@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.lang.annotation.Native;
 
 public class registeruser extends AppCompatActivity implements View.OnClickListener {
-
+    public info_checker obj;
     private TextView banner , registerUser;
     private EditText editTextFullName, editTextAge , editTextEmail , editTextPassword;
     private ProgressBar progressBar;
@@ -75,14 +75,19 @@ public class registeruser extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        if (age.isEmpty()){
+        if (obj.agecheck(age)){
             editTextAge.setError("Age is Required!");
             editTextAge.requestFocus();
             return;
         }
-        if(email.isEmpty()){
+        if(obj.EmailCheck(email)){
             editTextEmail.setError("Email is required!");
             editTextEmail.requestFocus();
+            return;
+        }
+        if (obj.emaillengthcheck(email)){
+            editTextAge.setError("Email has to be more than 10 characters");
+            editTextAge.requestFocus();
             return;
         }
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
@@ -90,12 +95,16 @@ public class registeruser extends AppCompatActivity implements View.OnClickListe
             editTextEmail.requestFocus();
             return;
         }
-        if(password.isEmpty()){
+        if(obj.PasswordEmptyCheck(password)){
             editTextPassword.setError("password is Required");
             editTextPassword.requestFocus();
             return;
         }
-
+        if(obj.passwordlengthcheck(password)){
+            editTextPassword.setError("password has to be more than 6 characters");
+            editTextPassword.requestFocus();
+            return;
+        }
         progressBar.setVisibility(View.VISIBLE);
         mAuth.createUserWithEmailAndPassword(email, password)
 
