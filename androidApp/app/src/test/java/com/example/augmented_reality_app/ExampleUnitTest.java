@@ -19,13 +19,6 @@ public class ExampleUnitTest {
    //     Assert.assertEquals(4, 2 + 2);
    // }
 
-    @Test
-   public void passwordlengthcheck() {
-        info_checker obj = new info_checker();
-
-
-        Assert.assertEquals(false,obj.passwordlengthcheck("Password"));
-    }
 
 
 }
