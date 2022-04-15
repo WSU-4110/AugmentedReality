@@ -5,12 +5,22 @@ pluginManagement {
         mavenCentral()
     }
 }
+
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('D:\\AugmentedReality\\androidApp\\unityLibrary')
+
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
     }
 }
 rootProject.name = "Augmented_Reality_app"
 include ':app'
+
+

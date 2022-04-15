@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Augmented_Reality_app">
         <activity
+            android:name=".UnityHandlerActivity"
+            android:exported="false" />
+        <activity
             android:name=".main_app"
             android:exported="false" />
         <activity

@@ -24,6 +24,14 @@ public class main_app extends AppCompatActivity {
                 startActivity(new Intent(main_app.this, MainActivity.class));
             }
         });
+
+        Button buttonClick = findViewById(R.id.Augmented);
+        buttonClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     public void goToSo (View view) {
