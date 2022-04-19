@@ -40,7 +40,7 @@ jobs:
           command: chmod +x ./gradlew
       - run:
           name: Assemble release build
-          command: |
+          command: chmod +x gradlew|
             ./gradlew assembleRelease
 
 # Invoke jobs via workflows
