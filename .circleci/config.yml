@@ -27,7 +27,7 @@ jobs:
       
       - run:
           name: add mod
-          command: sudo chmod +x gradlew
+          command: chmod +x gradlew
 
       # The next step will run the unit tests
       - android/run-tests:
