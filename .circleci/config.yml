@@ -26,6 +26,10 @@ jobs:
       - checkout
       
       - run:
+          name: get into directory
+          command: cd androidApp
+      
+      - run:
           name: add mod
           command: chmod +x gradlew
 
