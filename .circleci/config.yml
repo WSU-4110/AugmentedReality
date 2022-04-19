@@ -28,6 +28,10 @@ jobs:
       - run:
           name: get into directory
           command: cd androidApp
+          
+      - run:
+          name: print directory
+          command: ls -la
       
       - run:
           name: add mod
