@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.unity3d.player.UnityPlayerActivity;
 
 public class main_app extends AppCompatActivity {
     private Button logout;
@@ -29,7 +30,8 @@ public class main_app extends AppCompatActivity {
         buttonClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+            Intent intent = new Intent(main_app.this, UnityPlayerActivity.class);
+            startActivity(intent);
             }
         });
     }
