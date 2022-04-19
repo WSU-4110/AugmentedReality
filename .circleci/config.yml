@@ -36,11 +36,9 @@ jobs:
 
       # And finally run the release build
       - run:
-          name: add mod
-          command: chmod +x ./gradlew
-      - run:
           name: Assemble release build
-          command: chmod +x gradlew|
+          command: |
+            sudo chmod +x gradlew
             ./gradlew assembleRelease
 
 # Invoke jobs via workflows
