@@ -33,9 +33,9 @@ jobs:
       #     name: print directory
       #     command: ls -la
       
-      # - run:
-      #     name: add mod
-      #     command: chmod +x gradlew
+      - run:
+          name: add mod
+          command: cd androidApp | chmod +x gradlew
 
       # The next step will run the unit tests
       - android/run-tests:
