@@ -25,31 +25,32 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       
-      - run:
-          name: get into directory
-          command: cd androidApp
+      # - run:
+      #     name: get into directory
+      #     command: cd androidApp
           
-      - run:
-          name: print directory
-          command: ls -la
+      # - run:
+      #     name: print directory
+      #     command: ls -la
       
-      - run:
-          name: add mod
-          command: chmod +x gradlew
+      # - run:
+      #     name: add mod
+      #     command: chmod +x gradlew
 
       # The next step will run the unit tests
       - android/run-tests:
-          test-command: ./gradlew lint testDebug --continue
+          test-command: cd androidApp | ./gradlew lint testDebug --continue
 
       # Then start the emulator and run the Instrumentation tests!
       - android/start-emulator-and-run-tests:
-          test-command: ./gradlew connectedDebugAndroidTest
+          test-command: cd androidApp | ./gradlew connectedDebugAndroidTest
           system-image: system-images;android-25;google_apis;x86
 
       # And finally run the release build
       - run:
           name: Assemble release build
           command: |
+            cd androidApp
             ./gradlew assembleRelease
 
 # Invoke jobs via workflows
