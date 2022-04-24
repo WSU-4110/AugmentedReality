@@ -16,7 +16,7 @@ integrating the two together and creating an installation file for the app, the 
 * [Android Studio](https://developer.android.com/studio/)
 * [Unity](https://unity3d.com/get-unity/download) 
 * [ARFoundation](https://unity.com/unity/features/arfoundation)
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
+
 ## Members
 ***
 * Ali Saad
